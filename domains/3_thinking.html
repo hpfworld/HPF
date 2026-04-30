@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinking Domain - Human Purpose Framework</title>
+    <meta name="description" content="Explore the Thinking Domain with 7 subdomains and growth dimensions">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="../styles.css" as="style">
+    <link rel="preload" href="domain-styles.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" as="style">
+    
+    <!-- Load CSS files -->
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="domain-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../images/LogoHPF.png" alt="Human Purpose Framework Logo" class="logo-image">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#about" class="nav-link">About Us</a></li>
+                <li><a href="../index.html#domains" class="nav-link">Seven Domains</a></li>
+                <li><a href="../index.html#applications" class="nav-link">Applications</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Domain Hero -->
+    <section class="domain-hero">
+        <div class="container">
+            <div class="domain-hero-content">
+                <div class="breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>Thinking Domain</span>
+                </div>
+                <div class="domain-title">
+                    <div class="domain-icon-large thinking-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div>
+                        <h1>Thinking Domain</h1>
+                        <span class="domain-code-large">(LCCASAH)</span>
+                        <p class="domain-hero-desc">Thinking is the process of generating and evaluating ideas, leading to innovation and problem-solving.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Growth Dimensions Chart -->
+    <!-- <section class="growth-dimensions">
+        <div class="container">
+            <div class="section-header">
+                <h2>Growth Dimensions Chart</h2>
+                <p>Visualize how each subdomain develops across the five key human dimensions</p>
+            </div>
+            
+            <div class="dimensions-chart">
+                <div class="chart-legend">
+                    <div class="legend-item" data-dimension="sensory">
+                        <div class="legend-color sensory"></div>
+                        <span>Sensory</span>
+                    </div>
+                    <div class="legend-item" data-dimension="cognitive">
+                        <div class="legend-color cognitive"></div>
+                        <span>Cognitive</span>
+                    </div>
+                    <div class="legend-item" data-dimension="emotional">
+                        <div class="legend-color emotional"></div>
+                        <span>Emotional</span>
+                    </div>
+                    <div class="legend-item" data-dimension="social">
+                        <div class="legend-color social"></div>
+                        <span>Social</span>
+                    </div>
+                    <div class="legend-item" data-dimension="spiritual">
+                        <div class="legend-color spiritual"></div>
+                        <span>Spiritual</span>
+                    </div>
+                </div>
+                
+                <div class="dimensions-grid">
+                    <div class="dimension-row" data-subdomain="logical">
+                        <div class="subdomain-name">Logical</div>
+                        <div class="dimension-bar">
+                            <div class="bar-fill sensory" data-dimension="sensory"></div>
+                            <div class="bar-fill cognitive active" data-dimension="cognitive"></div>
+                            <div class="bar-fill emotional" data-dimension="emotional"></div>
+                            <div class="bar-fill social" data-dimension="social"></div>
+                            <div class="bar-fill spiritual" data-dimension="spiritual"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="dimension-row" data-subdomain="creative">
+                        <div class="subdomain-name">Creative</div>
+                        <div class="dimension-bar">
+                            <div class="bar-fill sensory active" data-dimension="sensory"></div>
+                            <div class="bar-fill cognitive active" data-dimension="cognitive"></div>
+                            <div class="bar-fill emotional active" data-dimension="emotional"></div>
+                            <div class="bar-fill social active" data-dimension="social"></div>
+                            <div class="bar-fill spiritual active" data-dimension="spiritual"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="dimension-row" data-subdomain="critical">
+                        <div class="subdomain-name">Critical</div>
+                        <div class="dimension-bar">
+                            <div class="bar-fill sensory" data-dimension="sensory"></div>
+                            <div class="bar-fill cognitive active" data-dimension="cognitive"></div>
+                            <div class="bar-fill emotional" data-dimension="emotional"></div>
+                            <div class="bar-fill social" data-dimension="social"></div>
+                            <div class="bar-fill spiritual" data-dimension="spiritual"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="dimension-row" data-subdomain="abstract">
+                        <div class="subdomain-name">Abstract</div>
+                        <div class="dimension-bar">
+                            <div class="bar-fill sensory" data-dimension="sensory"></div>
+                            <div class="bar-fill cognitive active" data-dimension="cognitive"></div>
+                            <div class="bar-fill emotional" data-dimension="emotional"></div>
+                            <div class="bar-fill social" data-dimension="social"></div>
+                            <div class="bar-fill spiritual active" data-dimension="spiritual"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="dimension-row" data-subdomain="system">
+                        <div class="subdomain-name">System</div>
+                        <div class="dimension-bar">
+                            <div class="bar-fill sensory active" data-dimension="sensory"></div>
+                            <div class="bar-fill cognitive active" data-dimension="cognitive"></div>
+                            <div class="bar-fill emotional" data-dimension="emotional"></div>
+                            <div class="bar-fill social active" data-dimension="social"></div>
+                            <div class="bar-fill spiritual" data-dimension="spiritual"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="dimension-row" data-subdomain="analytical">
+                        <div class="subdomain-name">Analytical</div>
+                        <div class="dimension-bar">
+                            <div class="bar-fill sensory" data-dimension="sensory"></div>
+                            <div class="bar-fill cognitive active" data-dimension="cognitive"></div>
+                            <div class="bar-fill emotional" data-dimension="emotional"></div>
+                            <div class="bar-fill social" data-dimension="social"></div>
+                            <div class="bar-fill spiritual" data-dimension="spiritual"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="dimension-row" data-subdomain="holistic">
+                        <div class="subdomain-name">Holistic</div>
+                        <div class="dimension-bar">
+                            <div class="bar-fill sensory active" data-dimension="sensory"></div>
+                            <div class="bar-fill cognitive active" data-dimension="cognitive"></div>
+                            <div class="bar-fill emotional active" data-dimension="emotional"></div>
+                            <div class="bar-fill social active" data-dimension="social"></div>
+                            <div class="bar-fill spiritual active" data-dimension="spiritual"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Subdomains with Videos -->
+    <section class="subdomains">
+        <div class="container">
+            <div class="section-header">
+                <h2>Seven Subdomains</h2>
+                <p>Explore each subdomain with dedicated video content and detailed explanations</p>
+            </div>
+            
+            <div class="subdomains-grid">
+                <!-- Logical Thinking -->
+                <div class="subdomain-card">
+                    <div class="subdomain-header">
+                        <div class="subdomain-icon thinking-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="subdomain-info">
+                            <h3>Logical Thinking</h3>
+                            <span class="subdomain-letter">L</span>
+                        </div>
+                    </div>
+                    <p class="subdomain-description">Following structured reasoning and systematic approaches to problem-solving with clear, logical steps.</p>
+                    
+                    <div class="video-container">
+                        <div class="video-placeholder" onclick="playVideo('logical')">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Video: Structured Reasoning Methods</span>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="subdomain-dimensions">
+                        <span class="dimension-tag cognitive" onclick="showDimensionInfo('cognitive')">Cognitive</span>
+                    </div> -->
+                </div>
+
+                <!-- Creative Thinking -->
+                <div class="subdomain-card">
+                    <div class="subdomain-header">
+                        <div class="subdomain-icon thinking-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="subdomain-info">
+                            <h3>Creative Thinking</h3>
+                            <span class="subdomain-letter">C</span>
+                        </div>
+                    </div>
+                    <p class="subdomain-description">Imagining novel ideas or solutions by combining existing concepts in new and innovative ways.</p>
+                    
+                    <div class="video-container">
+                        <div class="video-placeholder" onclick="playVideo('creative')">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Video: Unleashing Creative Potential</span>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="subdomain-dimensions">
+                        <span class="dimension-tag sensory" onclick="showDimensionInfo('sensory')">Sensory</span>
+                        <span class="dimension-tag cognitive" onclick="showDimensionInfo('cognitive')">Cognitive</span>
+                        <span class="dimension-tag emotional" onclick="showDimensionInfo('emotional')">Emotional</span>
+                        <span class="dimension-tag social" onclick="showDimensionInfo('social')">Social</span>
+                        <span class="dimension-tag spiritual" onclick="showDimensionInfo('spiritual')">Spiritual</span>
+                    </div> -->
+                </div>
+
+                <!-- Critical Thinking -->
+                <div class="subdomain-card">
+                    <div class="subdomain-header">
+                        <div class="subdomain-icon thinking-icon">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                        <div class="subdomain-info">
+                            <h3>Critical Thinking</h3>
+                            <span class="subdomain-letter">C</span>
+                        </div>
+                    </div>
+                    <p class="subdomain-description">Questioning and evaluating ideas systematically to determine their validity, reliability, and worth.</p>
+                    
+                    <div class="video-container">
+                        <div class="video-placeholder" onclick="playVideo('critical')">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Video: Developing Critical Analysis Skills</span>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="subdomain-dimensions">
+                        <span class="dimension-tag cognitive" onclick="showDimensionInfo('cognitive')">Cognitive</span>
+                    </div> -->
+                </div>
+
+                <!-- Abstract Thinking -->
+                <div class="subdomain-card">
+                    <div class="subdomain-header">
+                        <div class="subdomain-icon thinking-icon">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <div class="subdomain-info">
+                            <h3>Abstract Thinking</h3>
+                            <span class="subdomain-letter">A</span>
+                        </div>
+                    </div>
+                    <p class="subdomain-description">Dealing with concepts beyond the tangible, working with ideas, principles, and theoretical frameworks.</p>
+                    
+                    <div class="video-container">
+                        <div class="video-placeholder" onclick="playVideo('abstract')">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Video: Mastering Abstract Concepts</span>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="subdomain-dimensions">
+                        <span class="dimension-tag cognitive" onclick="showDimensionInfo('cognitive')">Cognitive</span>
+                        <span class="dimension-tag spiritual" onclick="showDimensionInfo('spiritual')">Spiritual</span>
+                    </div> -->
+                </div>
+
+                <!-- System Thinking -->
+                <div class="subdomain-card">
+                    <div class="subdomain-header">
+                        <div class="subdomain-icon thinking-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <div class="subdomain-info">
+                            <h3>System Thinking</h3>
+                            <span class="subdomain-letter">S</span>
+                        </div>
+                    </div>
+                    <p class="subdomain-description">Seeing relationships within interconnected systems and understanding how parts influence the whole.</p>
+                    
+                    <div class="video-container">
+                        <div class="video-placeholder" onclick="playVideo('systems')">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Video: Systems Perspective and Integration</span>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="subdomain-dimensions">
+                        <span class="dimension-tag sensory" onclick="showDimensionInfo('sensory')">Sensory</span>
+                        <span class="dimension-tag cognitive" onclick="showDimensionInfo('cognitive')">Cognitive</span>
+                        <span class="dimension-tag social" onclick="showDimensionInfo('social')">Social</span>
+                    </div> -->
+                </div>
+
+                <!-- Analytical Thinking -->
+                <div class="subdomain-card">
+                    <div class="subdomain-header">
+                        <div class="subdomain-icon thinking-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div class="subdomain-info">
+                            <h3>Analytical Thinking</h3>
+                            <span class="subdomain-letter">A</span>
+                        </div>
+                    </div>
+                    <p class="subdomain-description">Breaking down complexities into manageable parts to understand structure, function, and relationships.</p>
+                    
+                    <div class="video-container">
+                        <div class="video-placeholder" onclick="playVideo('analytical-thinking')">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Video: Analytical Problem-Solving Methods</span>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="subdomain-dimensions">
+                        <span class="dimension-tag cognitive" onclick="showDimensionInfo('cognitive')">Cognitive</span>
+                    </div> -->
+                </div>
+
+                <!-- Holistic Thinking -->
+                <div class="subdomain-card">
+                    <div class="subdomain-header">
+                        <div class="subdomain-icon thinking-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="subdomain-info">
+                            <h3>Holistic Thinking</h3>
+                            <span class="subdomain-letter">H</span>
+                        </div>
+                    </div>
+                    <p class="subdomain-description">Integrating perspectives for a comprehensive view, seeing the big picture and interconnections.</p>
+                    
+                    <div class="video-container">
+                        <div class="video-placeholder" onclick="playVideo('holistic')">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Video: Holistic Integration and Synthesis</span>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="subdomain-dimensions">
+                        <span class="dimension-tag sensory" onclick="showDimensionInfo('sensory')">Sensory</span>
+                        <span class="dimension-tag cognitive" onclick="showDimensionInfo('cognitive')">Cognitive</span>
+                        <span class="dimension-tag emotional" onclick="showDimensionInfo('emotional')">Emotional</span>
+                        <span class="dimension-tag social" onclick="showDimensionInfo('social')">Social</span>
+                        <span class="dimension-tag spiritual" onclick="showDimensionInfo('spiritual')">Spiritual</span>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation to Other Domains -->
+    <section class="domain-navigation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Explore Other Domains</h2>
+                <p>Continue your journey through the Human Purpose Framework</p>
+            </div>
+            
+            <div class="nav-domains">
+                <a href="1_observing.html" class="nav-domain-card">
+                    <div class="nav-domain-icon observing-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h4>Observing</h4>
+                    <span>(PCAREIA)</span>
+                </a>
+                <a href="2_understanding.html" class="nav-domain-card">
+                    <div class="nav-domain-icon understanding-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Understanding</h4>
+                    <span>(CECIARI)</span>
+                </a>
+                <a href="4_deciding.html" class="nav-domain-card">
+                    <div class="nav-domain-icon deciding-icon">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h4>Deciding</h4>
+                    <span>(RIICETS)</span>
+                </a>
+                <a href="5_performing.html" class="nav-domain-card">
+                    <div class="nav-domain-icon performing-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <h4>Performing</h4>
+                    <span>(ECCASSE)</span>
+                </a>
+                <a href="6_experiencing.html" class="nav-domain-card">
+                    <div class="nav-domain-icon experiencing-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4>Experiencing</h4>
+                    <span>(SCESCLT)</span>
+                </a>
+                <a href="7_repeating.html" class="nav-domain-card">
+                    <div class="nav-domain-icon repeating-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h4>Repeating</h4>
+                    <span>(IRACSHP)</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Human Purpose Framework</h3>
+                    <p>A holistic model for education, AI alignment, and human growth.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html#about">About HPF</a></li>
+                        <li><a href="../index.html#domains">Seven Domains</a></li>
+                        <li><a href="../index.html#applications">Applications</a></li>
+                        <li><a href="../index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <div class="social-row">
+                            <a href="https://x.com/HPFWORLD" target="_blank" rel="noopener noreferrer"><i class="fab fa-x"></i></a>
+                            <a href="https://www.linkedin.com/company/hpf-world" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/hpfworld" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="https://youtube.com/@HPFworld" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                        </div>
+                        <div class="social-row">
+                            <a href="https://facebook.com/profile.php?id=61581930064162" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+                            <a href="https://tiktok.com/@hpfworld" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://instagram.com/hpf.world" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                            <a href="https://threads.com/@hpf.world" target="_blank" rel="noopener noreferrer"><i class="fab fa-threads"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Human Purpose Framework. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-video">
+                <iframe id="modalVideo" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dimension Info Modal -->
+    <div id="dimensionModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="dimensionContent">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../script.js" defer></script>
+    <script src="domain-script.js" defer></script>
+</body>
+</html>

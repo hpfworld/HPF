@@ -1,0 +1,27 @@
+# Human Purpose Framework - robots.txt for SEO
+# Allows search engines to crawl and index the site
+
+User-agent: *
+Allow: /
+Allow: /domains/
+Allow: /images/
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /private/
+Disallow: /*.json$
+
+# Specific rules for Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Specific rules for Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://hpf.world/sitemap.xml
+
+# Cache control
+Cache-Control: public, max-age=604800
