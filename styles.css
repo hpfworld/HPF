@@ -539,34 +539,34 @@ body {
 }
 
 /* Position domain items perfectly on the ring */
-.domain-item:nth-child(1) { /* O - Top */
+.domain-item:nth-child(1) { /* D - Top */
     top: 3%; 
     left: 50%; 
     transform: translateX(-50%); 
 }
-.domain-item:nth-child(2) { /* U - Top Right */
+.domain-item:nth-child(2) { /* P - Top Right */
     top: 22%; 
     right: 8%; 
 }
-.domain-item:nth-child(3) { /* T - Right */
+.domain-item:nth-child(3) { /* E - Right */
     top: 58%; 
     right: 15px; 
     transform: translateY(-50%); 
 }
-.domain-item:nth-child(4) { /* D - Bottom Right */
+.domain-item:nth-child(4) { /* R - Bottom Right */
     bottom: 8.5%; 
     right: 22%; 
 }
-.domain-item:nth-child(5) { /* P - Bottom */
+.domain-item:nth-child(5) { /* O - Bottom */
     bottom: 34px; 
     left: 32%; 
     transform: translateX(-50%); 
 }
-.domain-item:nth-child(6) { /* E - Bottom Left */
+.domain-item:nth-child(6) { /* U - Bottom Left */
     bottom: 33.5%; 
     left: 3%; 
 }
-.domain-item:nth-child(7) { /* R - Left */
+.domain-item:nth-child(7) { /* T - Left */
     top: 31%; 
     left: 30px; 
     transform: translateY(-50%); 
