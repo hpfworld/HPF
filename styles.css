@@ -2142,29 +2142,3 @@ img {
 .pb-3 { padding-bottom: 1rem; }
 .pb-4 { padding-bottom: 1.5rem; }
 .pb-5 { padding-bottom: 3rem; }
-
-/* Mobile Zoom Out Fix - Scale entire page for mobile devices */
-@media (max-width: 1280px) {
-    html {
-        transform-origin: top center;
-        transform: scale(0.85);
-        width: calc(100% / 0.85);
-        height: calc(100% / 0.85);
-    }
-}
-
-@media (max-width: 768px) {
-    html {
-        transform: scale(0.65);
-        width: calc(100% / 0.65);
-        height: calc(100% / 0.65);
-    }
-}
-
-@media (max-width: 480px) {
-    html {
-        transform: scale(0.55);
-        width: calc(100% / 0.55);
-        height: calc(100% / 0.55);
-    }
-}
