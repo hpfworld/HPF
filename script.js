@@ -3,16 +3,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const navMenu = document.querySelector('.nav-menu');
     const contactForm = document.getElementById('contactForm');
     const customSelect = document.getElementById('customSelect');
+    const revealItems = document.querySelectorAll('.reveal');
 
     const closeMenu = () => {
         hamburger?.classList.remove('active');
-        navMenu?.classList.remove('active');
+        navMenu?.classList.remove('mobile-open');
+        hamburger?.setAttribute('aria-expanded', 'false');
     };
 
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
+            navMenu.classList.toggle('mobile-open');
+            hamburger.setAttribute('aria-expanded', navMenu.classList.contains('mobile-open') ? 'true' : 'false');
         });
     }
 
@@ -40,6 +43,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (customSelect) {
         initCustomSelect(customSelect);
+    }
+
+    if ('IntersectionObserver' in window && revealItems.length) {
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            });
+        }, { threshold: 0.15 });
+
+        revealItems.forEach(item => revealObserver.observe(item));
+    } else {
+        revealItems.forEach(item => item.classList.add('visible'));
     }
 
     const updateActiveNavLink = () => {
